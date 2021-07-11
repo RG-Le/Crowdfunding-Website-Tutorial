@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+/* ----------------------COLORS-------------------- */
+/* --moderate-cyan: hsl(176, 50%, 47%);
+--dark-cyan: hsl(176, 72%, 28%);
+--black: hsl(0, 0%, 0%);
+--dark-gray: hsl(0, 0%, 48%); */
+
+/* ------------------------------Attribution-------------------- */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* ---------------------------Default------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    background-color: whitesmoke;
+}
+
+/* ------------------------Header----------------------------- */
+header {
+    min-height: 30vh;
+    min-width: 100%;
+    background: url('/images/image-hero-desktop.jpg');
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mob_box ul {
+    list-style: none;
+}
+
+.mob_box ul li {
+    display: inline-block;
+    padding-right: 7%;
+    position: relative;
+    left: 10%;
+}
+
+.nav_toggle {
+    display: none;
+}
+
+.mob_box a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.logo {
+    padding: 5% 0 0 12%;
+}
+
+.mob_box {
+    padding: 5% 3% 0 0;
+    width: 30%;
+    align-items: center;
+}
+
+.logo img {
+    width: 120%;
+    height: 90%;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -8px;
+    left: 0;
+    background-color: white ;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .mob_box img {
+    display: none;
+  }
+
+  @media screen and (max-width: 1120px) {
+    header {
+        background: url('/images/image-hero-mobile.jpg');
+    }
+    
+    .logo {
+        padding-left: 8%;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: 1.8rem;
+    }  
+    
+    .nav_toggle {
+          display: block;
+          padding: 5% 3% 0 0;
+          width: 15%;
+      }
+
+      .ham {
+          display: block;
+          position: relative;
+          right: 0%;
+          top: 10%; 
+          width: 1.5rem;  
+      }
+      
+      .close {
+          display: none;
+          position: relative;
+          left: 50%;
+          padding-top: 10%;
+      }
+
+
+      .mob_box ul li {
+          display: block;
+          padding: 0;
+          padding-bottom: 5%;
+          width:80%;
+      }
+
+      .mob_box ul li a {
+        color: black;
+      }
+
+      .mob_box ul{
+          align-items: center;
+          text-align: center;
+          padding: 5% 0;
+      }
+
+      .mob_box {
+          width: 90%;
+          padding: 0;
+          background-color: white ;
+          border-radius: 10px;
+          position: fixed;
+          top: -60%;
+          left: 5%;
+          z-index: 50;
+
+      /* .move_down {
+          top: 15%;
+          transform: translate(0, 40%);
+          transition: .5s;
+      } */
+
+}}
+
+/* ----------------------------------------PROJECT BACK-------------------------------- */
+
+.main {
+    margin: 0 20% 2%;
+    /* padding: 0 7% 5%; */
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+}
+
+/* -------------------------------------Project Back------------------------------------- */
+
+
+.project_back {
+    padding: 0 7% 5%;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+
+.project_intro {
+    text-align: center;
+}
+
+.project_intro img {
+    position: relative;
+    bottom: 25px;
+}
+
+.project_intro h1 {
+    padding-bottom: 2%;
+    font-size: 1.5rem;
+}
+
+.project_intro p {
+    color: hsl(0, 0%, 48%);
+    font-size: .9rem;
+    padding-bottom: 7%;
+}
+
+.project_btn {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.btn1 {
+    width: 30%;
+    height: 45px;
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: .8rem;
+}
+
+.btn1:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.btn2 {
+    width: 30%;
+    height: 45px;
+    background-color: whitesmoke;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.book_icon {
+    position: relative;
+    bottom: 0px;
+    right: 40%; 
+    height: 45px;
+    border-radius: 20%;
+}
+
+.btn_content {
+    position: relative;
+    bottom: 32px;
+    left: 5%;
+}
+
+.btn2:hover {
+    background-color: hsl(0, 0%, 48%);
+    color: white;
+}
+
+.click_color {
+    color: hsl(176, 50%, 47%);
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 780px) {
+    .main {
+        margin: 0 10% 5%;
+    }
+
+    .btn1 {
+        width: 60%;
+    }
+
+    .btn2 {
+        background-color: white;
+    }
+
+    .btn_content {
+        display: none;
+    }
+
+    .book_icon {
+        right: 0;
+    }
+} 
+
+/* ----------------------------Fund Details----------------------------- */
+
+.fund_details {
+    margin-top: 5%;
+    padding: 5% 7% 5%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.fund_details h1 {
+    padding-bottom: 2%;
+}
+
+.fund_details p {
+    color: hsl(0, 0%, 48%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vertical_line {
+    background-color: whitesmoke;
+    width: 3px;
+    height: 60px;
+}
+
+.bar {
+    margin: 5% 0 0;
+    width: 100%;
+    height: 15px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+.percentage {
+    width: 70%;
+    background-color: hsl(176, 50%, 47%);
+    height: 15px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 780px) {
+    
+    footer {
+        bottom: -150%;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .vertical_line {
+        transform: rotate(90deg);
+        position: relative;
+        left: 50%;
+        width: 5px;
+        height: 100px;
+    }
+    
+}
+
+/* -------------------------About -------------------------------- */
+
+.about {
+    margin-top: 5%;
+    padding: 5% 7% 5%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.about_project {
+    padding-bottom: 2%;
+}
+
+.about_project h3{
+    padding-bottom: 2%;
+    font-size: 1.2rem;
+}
+
+.about_project p {
+    color: hsl(0, 0%, 48%);
+    line-height: 1.5;
+}
+
+.bamboo_stand {
+    margin: 4% 0;
+    padding: 5%;
+    border: 4px solid whitesmoke;
+    border-radius: 20px;
+}
+
+.stand_pledge {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.content {
+    padding-bottom: 3%;
+    color: hsl(0, 0%, 48%);
+}
+
+.number-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number_left h2 {
+    display: inline-block;
+    color: black;
+}
+
+.number_left p {
+    display: inline-block;
+}
+
+.subtitle {
+    color: hsl(176, 50%, 47%);
+}
+
+.number-btn p {
+    color: hsl(0, 0%, 48%);
+}
+
+.btn button {
+    border: none;
+    background-color: hsl(176, 50%, 47%);
+    height: 45px;
+    width: 130px;
+    padding: 2%;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.gray h3 {
+    color: hsl(0, 0%, 48%);
+}
+
+.gray h2,
+.gray .subtitle {
+    color: hsl(0, 0%, 48%);
+}
+
+.gray .subtitle {
+    color: lightgray;
+}
+
+.gray_btn button {
+    background-color: lightgray;
+}
+
+.gray_btn button:hover {
+    background-color: lightgray;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    background-color: whitesmoke;
+    bottom: -100%;
+    z-index: -5;
+}
+
+@media screen and (max-width: 780px) {
+
+    .about {
+        padding-top: 10%;
+    }
+
+    .about_project h3 {
+        padding-bottom: 8%;
+    }
+
+    .bamboo_stand{
+        border: 2px solid whitesmoke;
+        padding: 10%;
+    }
+
+    .stand_pledge {
+        display: block;
+    }
+
+    .title {
+        padding-bottom: 4%;
+    }
+
+    .content {
+        line-height: 1.5;
+        padding: 3% 0 6%;
+    }
+
+    .number-btn {
+        display: block;
+    }
+
+    .number_left {
+        padding-bottom: 8%;
+        padding-left: 5%;
+    }
+
+    .bamboo_stand {
+        margin: 10% 0;
+    }
+
+    footer {
+        bottom: -200%;
+    }
+}
+
+
+/* -----------------------------------Modals -------------------------------------- */
+
+.modal_before {
+    display: none;
+    margin: 0 0 1%;
+    padding: 2% 4% 2%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.close_modal {
+    position: relative;
+    left: 2%;
+    text-align: right;
+    padding-bottom: 5%;
+}
+
+.modal_title {
+    font-size: 1.3rem;
+    padding-bottom: 5%;
+}
+
+.select_box {
+    padding: 2% 0 0;
+    margin: 2% 0 4%;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.container1 {
+    display: flex;
+}
+
+.checkbox {
+    padding-right: 2%;
+    padding-left: 5%;
+    position: relative;
+    top: 2px;
+}
+
+.select_content {
+    padding: 2% 2% 5% 9%;
+    /* padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%; */
+    color: hsl(0, 0%, 48%);
+}
+
+.select_content_nr {
+    padding: 2% 2% 5% 9%;
+    /* padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%; */
+    color: hsl(0, 0%, 48%);
+}
+
+.selected_option {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 2%;
+    border-top: 3px solid whitesmoke;
+}
+
+.disp {
+    display: none;
+}
+
+.amt_btn {
+    padding-right: 30%;
+}
+
+.amt_btn button {
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 48%);
+    background-color: white;
+    font-weight: bold;
+}
+
+.amt_btn button:hover {
+    background-color: lightgray;
+}
+
+.cont_btn button {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(176, 50%, 47%);
+    font-weight: bold;
+    color: white;
+}
+
+.cont_btn button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.modal_btn {
+    display: flex;
+    position: relative;
+    right: 10%;
+}
+
+.pledge {
+    padding: 0 5%;
+}
+
+.pledge h4 {
+    font-weight: lighter;
+    color: hsl(176, 50%, 47%);
+}
+
+.pledge_request h4 {
+    color:hsl(0, 0%, 48%)
+}
+
+.left {
+    display: flex;
+    padding-left: 10%;
+}
+
+.bamb {
+    padding-left: 140px;
+}
+
+.left_h {
+    padding-right: 5px;
+}
+
+
+.blacke {
+    padding-left: 110px;
+}
+
+.mahog {
+    padding-left: 50px;
+}
+
+.gray_modal {
+    color: hsl(0, 0%, 48%);
+}
+
+.cont_btn_gray button {
+    background-color: hsl(0, 0%, 48%);
+}
+
+.left1 {
+    display: none;
+}
+
+.display_toggle {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .modal_before {
+        margin: 0 0 5%;
+        padding: 3% 5%;
+    }
+
+    .close_modal {
+        top: 40px;
+        left: 0;
+    }
+
+    .heading {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .select_box {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .select_content {
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-left: 5%;
+        line-height: 1.5;
+    }
+
+    .selected_option {
+        display: block;
+        text-align: center;
+    }
+
+    .modal_btn {
+        padding-top: 5%;
+        left: 21%;   
+    }
+
+    .amt_btn {
+        padding-right: 5%;
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    .checkbox {
+        position: relative;
+        top: 20px;
+    }
+
+    .select_title {
+        position: relative;
+        left: 40px;
+        bottom: 8px;
+    }
+
+    .pledge {
+        position: relative; 
+        left: 25px;
+        bottom: 4px;
+    }
+
+
+    .left_p {
+        color: hsl(0, 0%, 48%);
+    }
+
+
+    .select_content_nr {
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-left: 5%;
+        line-height: 1.5;
+    }
+
+    .left1 {
+        display: flex;
+        padding: 0 5% 5%;
+    }
+
+    .left {
+        display: none;
+    }
+           
+    
+}
+
+/* ---------------------------------Modal Succes------------------------------------ */
+
+#modal_success {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    background-color: white;
+    width: 50vh;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.check_img {
+    text-align: center;
+    padding: 2% 0 5%;
+}
+
+.check_title {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+}
+
+.check_subtitle {
+    text-align: center;
+    color: hsl(0, 0%, 48%);
+    font-size: 1rem;
+    padding-bottom: 5%;
+}
+
+.check_btn {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.check_btn button {
+    width: 25%;
+    height: 35px;
+    border: none;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+    #modal_success {
+        width: 30vh;
+        margin: 0 7%;
+        left: 0;
+        padding: 10%;
+    }
+
+    .check_btn button {
+        width: 40%;
+        height: 40px;
+        line-height: 1.5;
+    }
+}
+
+/* main {
+    opacity: 0.5;
+}
+
+header {
+    opacity: 0.5;
+} */
